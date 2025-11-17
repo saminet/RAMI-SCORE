@@ -1,1 +1,15 @@
-// Contenu du fichier app/src/main/AndroidManifest.xml
+<manifest package="com.example.ramiscore" xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="Rami Score"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round">
+        <activity android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.RamiScore">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

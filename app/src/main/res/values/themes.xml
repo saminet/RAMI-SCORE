@@ -1,1 +1,5 @@
-// Contenu du fichier app/src/main/res/values/themes.xml
+<resources>
+  <style name="Theme.RamiScore" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <item name="android:statusBarColor">#ff5722</item>
+  </style>
+</resources>

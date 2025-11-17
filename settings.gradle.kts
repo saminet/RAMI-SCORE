@@ -1,1 +1,2 @@
-// Contenu du fichier settings.gradle.kts
+rootProject.name = "RamiScore"
+include(":app")

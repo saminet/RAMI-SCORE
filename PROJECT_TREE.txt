@@ -1,0 +1,23 @@
+RamiScore/
+app/
+settings.gradle.kts
+build.gradle.kts
+README.md
+PROJECT_TREE.txt
+src/
+build.gradle.kts
+  main/
+    java/
+    res/
+    AndroidManifest.xml
+      com/
+        example/
+          ramiscore/
+            MainActivity.kt
+            GameViewModel.kt
+            models.kt
+      drawable/
+      values/
+        ic_logo_placeholder.xml
+        ic_avatar.xml
+        themes.xml
