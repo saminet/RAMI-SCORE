@@ -1,7 +1,7 @@
 workflows:
   android-release:
     name: Build APK Release
-    max_build_duration: 3600
+    max_build_duration: 100
     scripts:
       - name: Clean project
         script: ./gradlew clean
