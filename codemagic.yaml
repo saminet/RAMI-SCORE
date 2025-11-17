@@ -1,0 +1,22 @@
+workflows:
+  android-release:
+    name: Build APK Release
+    max_build_duration: 60
+    environment:
+      vars:
+        JAVA_HOME: /usr/lib/jvm/java-17-openjdk
+      flutter: false
+      xcode: false
+      cocoapods: false
+      android: true
+    scripts:
+      - name: Clean project
+        script: ./gradlew clean
+      - name: Build APK
+        script: ./gradlew assembleRelease
+    artifacts:
+      - app/build/outputs/apk/release/app-release.apk
+    publishing:
+      email:
+        recipients:
+          - sami.fereh@gmail.com
