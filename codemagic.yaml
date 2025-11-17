@@ -3,8 +3,7 @@ workflows:
     name: Build APK Release
     max_build_duration: 60
     environment:
-      vars:
-        JAVA_HOME: /usr/lib/jvm/java-17-openjdk
+      # Pas besoin de JAVA_HOME, Codemagic gère le JDK
     scripts:
       - name: Clean project
         script: ./gradlew clean
