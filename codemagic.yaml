@@ -5,14 +5,10 @@ workflows:
     environment:
       vars:
         JAVA_HOME: /usr/lib/jvm/java-17-openjdk
-      flutter: false
-      xcode: false
-      cocoapods: false
-      android: true
     scripts:
       - name: Clean project
         script: ./gradlew clean
-      - name: Build APK
+      - name: Build Release APK
         script: ./gradlew assembleRelease
     artifacts:
       - app/build/outputs/apk/release/app-release.apk
