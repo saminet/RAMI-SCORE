@@ -2,8 +2,6 @@ workflows:
   android-release:
     name: Build APK Release
     max_build_duration: 60
-    environment:
-      # Pas besoin de JAVA_HOME, Codemagic gère le JDK
     scripts:
       - name: Clean project
         script: ./gradlew clean
